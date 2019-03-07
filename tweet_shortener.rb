@@ -32,7 +32,7 @@ end
 def shortened_tweet_truncator(tweet)
   
   new_tweet=selective_tweet_shortener(tweet)
-  if new_tweet.chars.length> 140 
+  if new_tweet.chars.length > 140 
     puts new_tweet[0..140]
 
 end 
