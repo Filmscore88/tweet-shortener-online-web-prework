@@ -5,12 +5,11 @@ end
 
 
 def word_substituter(tweet)
-  
-  
- new_array=[]
-new_array=tweet.split
-new_array.collect! do |x| 
-end
-end 
-end
+  tweet.split(" ").map do |word|
+      if dictionary.keys.include?(word.downcase)
+        word = dictionary[word.downcase]
+      else
+        word
+    end
+  end.join(" ")
 end
